@@ -1,0 +1,389 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  background: #f5eee6; /* soft beige */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a3728; /* dark brown text */
+}
+
+section {
+  padding: 60px 0;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #4a3728; /* deep brown */
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+/* CONTAINER WIDTH FIX */
+.container {
+  max-width: 1200px;
+}
+
+/* ----------------------------- */
+/* NAVBAR */
+/* ----------------------------- */
+
+.navbar {
+  padding: 15px 30px !important;
+  background: #8b6f47 !important; /* warm brown */
+}
+
+.navbar a {
+  color: #fffaf3 !important; /* cream white text */
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #d4c3b5 !important; /* light taupe */
+}
+
+/* Dropdown fix */
+.navbar .dropdown-menu {
+  background-color: #8b6f47;
+  border: none;
+  border-radius: 8px;
+}
+
+.navbar .dropdown-item {
+  color: #fffaf3 !important;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #4a3728 !important;
+  color: #fffaf3 !important;
+}
+
+/* ----------------------------- */
+/* LANDING */
+/* ----------------------------- */
+
+#home {
+  text-align: center;
+}
+
+.landing-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #4a3728;
+}
+
+.landing-subtext {
+  color: #6a5a4a;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.landing-btn {
+  padding: 12px 28px;
+  font-size: 18px;
+  border-radius: 8px;
+  background: #8b6f47;
+  color: white;
+  border: none;
+}
+
+.landing-btn:hover {
+  background: #4a3728;
+}
+
+/* TEMP IMAGE PLACEHOLDER */
+.placeholder-hero {
+  width: 100%;
+  height: 320px;
+  background: #d4c3b5; /* taupe */
+  border-radius: 18px;
+  margin-bottom: 25px;
+}
+
+/* ----------------------------- */
+/* PRODUCTS */
+/* ----------------------------- */
+
+.product-box {
+  transition: 0.3s ease;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 12px;
+  background: #fffaf3; /* cream white */
+  border: 1px solid #e6d7c5;
+}
+
+.product-box:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+.product-img {
+  height: 170px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #d4c3b5;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.product-box:hover img {
+  transform: scale(1.1);
+}
+
+.product-box p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #4a3728;
+}
+
+/* ----------------------------- */
+/* PRICING */
+/* ----------------------------- */
+
+.card {
+  padding: 20px;
+  border-radius: 14px !important;
+  background: #fffaf3;
+  border: 1px solid #e6d7c5 !important;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.price-img {
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #d4c3b5;
+}
+
+.price-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card h4 {
+  margin-top: 10px;
+  font-weight: 700;
+  color: #4a3728;
+}
+
+/* ----------------------------- */
+/* BLOG */
+/* ----------------------------- */
+
+.blog-card {
+  background: #fffaf3;
+  border-radius: 14px;
+  padding: 18px;
+  transition: 0.3s ease;
+  border: 1px solid #e6d7c5;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.blog-img {
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #d4c3b5;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-card h3 {
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+.blog-card p {
+  color: #6a5a4a;
+  margin-top: 8px;
+}
+
+/* ----------------------------- */
+/* CONTACT */
+/* ----------------------------- */
+
+.contact-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #4a3728;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #8b6f47;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #c9b8a8;
+  background: #fffaf3;
+}
+
+.contact-container button {
+  padding: 12px 20px;
+  background: #8b6f47;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-container button:hover {
+  background: #4a3728;
+}
+
+/* ----------------------------- */
+/* FOOTER */
+/* ----------------------------- */
+
+footer {
+  background: #4a3728;
+  padding: 25px 0;
+  text-align: center;
+  color: #fffaf3;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ----------------------------- */
+/* SHOWROOM SLIDER */
+/* ----------------------------- */
+
+.showroom-card {
+  width: 320px;
+  background: #fffaf3;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  border: 1px solid #e6d7c5;
+}
+
+.showroom-card:hover {
+  transform: translateY(-5px);
+}
+
+.showroom-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #d4c3b5;
+}
+/* FOOTER */
+.footer {
+  background: #4a3728; /* dark brown */
+  color: #fffaf3;      /* cream text */
+}
+
+.footer-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fffaf3;
+}
+
+.footer-text {
+  color: #e6d7c5;
+  margin-top: 10px;
+}
+
+.footer-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fffaf3;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+  color: #e6d7c5;
+  font-size: 16px;
+}
+
+.footer-links li i {
+  margin-right: 8px;
+}
+
+.footer-links a {
+  color: #e6d7c5;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-socials a {
+  color: #fffaf3;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #d4c3b5;
+}
+
+.footer-line {
+  border-color: #8b6f47;
+  opacity: 0.3;
+  margin: 15px 0;
+}
+
+.footer-copy {
+  color: #d4c3b5;
+  margin-top: 10px;
+}
